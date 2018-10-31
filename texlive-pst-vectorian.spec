@@ -6,7 +6,7 @@
 # catalog-version 0.4
 Name:		texlive-pst-vectorian
 Version:	0.4
-Release:	9
+Release:	10
 Summary:	Printing ornaments
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-vectorian
