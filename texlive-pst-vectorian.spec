@@ -1,18 +1,12 @@
-# revision 28801
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-vectorian
-# catalog-date 2013-01-11 11:15:33 +0100
-# catalog-license lppl
-# catalog-version 0.4
 Name:		texlive-pst-vectorian
-Version:	0.4
-Release:	10
+Version:	60488
+Release:	1
 Summary:	Printing ornaments
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-vectorian
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vectorian.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vectorian.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vectorian.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vectorian.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,24 +17,22 @@ The package uses PStricks to draw ornaments (a substantial
 repertoire of ornaments is provided).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/pst-vectorian/psvectorian.pro
-%{_texmfdistdir}/tex/latex/pst-vectorian/psvectorian.sty
-%doc %{_texmfdistdir}/doc/latex/pst-vectorian/README
-%doc %{_texmfdistdir}/doc/latex/pst-vectorian/psvectorian.pdf
-%doc %{_texmfdistdir}/doc/latex/pst-vectorian/psvectorian.tex
+%{_texmfdistdir}/dvips/pst-vectorian
+%{_texmfdistdir}/tex/latex/pst-vectorian
+%doc %{_texmfdistdir}/doc/latex/pst-vectorian
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
