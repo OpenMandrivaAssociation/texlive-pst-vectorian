@@ -1,6 +1,6 @@
 Name:		texlive-pst-vectorian
 Version:	60488
-Release:	1
+Release:	2
 Summary:	Printing ornaments
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-vectorian
