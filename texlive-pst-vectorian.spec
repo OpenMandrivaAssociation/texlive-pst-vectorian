@@ -3,7 +3,7 @@ Version:	60488
 Release:	2
 Summary:	Printing ornaments
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-vectorian
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-vectorian
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vectorian.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vectorian.doc.r%{version}.tar.xz
